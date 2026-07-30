@@ -8,15 +8,9 @@ The PU Robot kit is available from the [ELECFREAKS store](https://shop.elecfreak
 
 ## micro:bit compatibility
 
-This extension is intended for **micro:bit V2**.
+> Using these blocks requires the micro:bit V2 hardware. micro:bit V1 will display the 927 error code.
 
-Reasons:
-
-* The robot runtime uses `input.soundLevel()`, which depends on V2 hardware.
-* The extension is large enough that simple V1 projects may hit the MakeCode `code too big` limit.
-* The package metadata disables the micro:bit V1 (`mbdal`) build variant so MakeCode treats this as a V2-only extension.
-
-For approval and classroom use, please present this package as **V2 only** in the repository description, icon, README, and product documentation.
+This extension is **micro:bit (V2) only**.
 
 ## What teachers can do with this extension
 

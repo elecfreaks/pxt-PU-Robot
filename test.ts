@@ -11,7 +11,7 @@
  *
  * Notes:
  * - Sensor values may be 0 or placeholder values if robot hardware is absent.
- * - This extension targets micro:bit V2.
+ * - This extension is micro:bit V2 only.
  */
 
 robotPu.setServoTrim(0, 0, 0, 0, 0, 0)
