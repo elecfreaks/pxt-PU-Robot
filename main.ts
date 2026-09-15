@@ -427,7 +427,7 @@ namespace robotPu {
             case MoveDirection.Backward:
                 // Backward walk: use user-specified speed, straight
                 doCompletions(() => {
-                    const currentSpeed = 2 * normalizedSpeed;
+                    const currentSpeed = -2 * normalizedSpeed;
                     return robot.walk(currentSpeed, 0);
                 }, steps * 2);
                 break;
@@ -438,6 +438,14 @@ namespace robotPu {
             case MoveDirection.SideRight:
                 // Right side step: positive direction, use user-specified speed
                 doCompletions(() => robot.sideStep(normalizedSpeed * 0.2), steps * 2);
+                break;
+            case MoveDirection.LeftTurn:
+                // Turn left in place using a negative directional bias
+                doCompletions(() => robot.turnInPlace(-normalizedSpeed), steps * 2);
+                break;
+            case MoveDirection.RightTurn:
+                // Turn right in place using a positive directional bias
+                doCompletions(() => robot.turnInPlace(normalizedSpeed), steps * 2);
                 break;
         }
     }
