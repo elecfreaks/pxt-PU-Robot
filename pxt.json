@@ -1,6 +1,6 @@
 {
   "name": "pxt-robotpu",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "micro:bit (V2) only PU Robot MakeCode extension for motion, sensors, lights, and radio control.",
   "license": "MIT",
   "dependencies": {
